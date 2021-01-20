@@ -1,0 +1,11 @@
+name: StorageTestEnv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6.2
+  - pip==20.2.1
+  - pip:    
+    - azure-storage-blob==12.4.0
+    - pandas
+    - fastparquet
+    - pyodbc

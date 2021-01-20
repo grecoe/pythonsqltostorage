@@ -1,0 +1,29 @@
+{
+    "context" : {
+        "temp_directory" : "./tmp"
+    },
+    "storage": {
+        "connection" : "AZURE_STORAGE_CONNECTION_STRING",
+        "container" : "AZURE_STORAGE_CONTAINER_NAME",
+        "format": "both"
+    },
+    "sql" : {
+        "server" : "YOUR_SERVER.database.windows.net",
+        "user" : "YOUR_USER",
+        "password" : "YOUR_USER_PASSWORD",
+        "driver" : "{ODBC Driver 17 for SQL Server}"
+    },
+    "sqlscripts" : [
+        {
+            "database" : "testdummy",
+            "script" : "./scripts/all.sql",
+            "blob_name" : "%Y/%m/%d"
+        },
+        {
+            "database" : "testdummy",
+            "script" : "./scripts/first.sql",
+            "blob_name" : "%Y/%m/%d/"
+        }
+    ]
+
+}
